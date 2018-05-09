@@ -2,11 +2,143 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-s
+cale=1">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <header>
+    <section class="menu">
+      <div class="menu__burger js-burger">
+        <span class="burger__box">
+          <span class="burger__inner"></span>
+        </span>
+      </div>
+      <div class="menu__container">
+        <ul class="menu__list">
+          <li class="menu__item">Главная</li>
+          <li class="menu__item"><a href="photo.html">Фото и&nbsp;видео</a></li>
+          <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
+        </ul>
+      </div>
+      <div class="logo"><img src="http://placehold.it/102x83"></div>
+    </section><!--/menu-->
+    <section class="first-screen">
+      <div class="first-screen__welcome"><img src="http://placehold.it/282x214"></div>
+    </section>
+  </header>
 
+  <main>
+    <section class="intro">
+      <h1 class="intro__title">Седона&nbsp;&mdash; небольшой
+        городок в&nbsp;Аризоне,
+        заслуживающий большего!</h1>
+      <div class="intro__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</div>
+    </section>
+    <section class="cases">
+      <div class="case case1">
+        <header class="case__header case1__header">
+          <h1 class="case__title case1__title">Настоящий городок</h1>
+          <div class="case__num case1__num">№1</div>
+          <div class="case__text case1__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</div>
+        </header>
+        <div class="case__image case1__image"></div>
+        <div class="case__list case1__list case-list">
+          <div class="case-list__item">
+            <div class="case-list__icon"><img src="http://placehold.it/39x37"></div>
+            <div class="case-list__desc">
+              <div class="case-list__title">Жилье</div>
+              <div class="case-list__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</div>
+            </div>
+          </div>
+          <div class="case-list__item">
+            <div class="case-list__icon"><img src="http://placehold.it/32x38"></div>
+            <div class="case-list__desc">
+              <div class="case-list__title">Сувениры</div>
+              <div class="case-list__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</div>
+            </div>
+          </div>
+          <div class="case-list__item">
+            <div class="case-list__icon"></div>
+            <div class="case-list__desc">
+              <div class="case-list__title">Еда</div>
+              <div class="case-list__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!</div>
+            </div>
+          </div>
+        </div>
+      </div><!--/case1-->
+
+      <div class="case case2">
+        <header class="case__header case2__header">
+          <h1 class="case__title case2__title">Там есть Мост дьявола</h1>
+          <div class="case__num case2__num">№2</div>
+          <div class="case__text case2__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</div>
+        </header>
+        <div class="case__image case2__image"></div>
+      </div><!--/case2-->
+
+      <div class="other-case case">
+        <div class="case__header other-case__header">
+          <h1 class="case__title other-case__title">Небольшая площадь</h1>
+          <div class="case__num other-case__num">№3</div>
+          <div class="case__text other-case__text">Все интересные места находятся очень близко</div>
+        </div>
+        <div class="case__header other-case__header">
+          <h1 class="case__title other-case__title">Красивая дорога</h1>
+          <div class="case__num other-case__num">№4</div>
+          <div class="case__text other-case__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</div>
+        </div>
+        <div class="case__header other-case__header">
+          <h1 class="case__title other-case__title">Мало туристов</h1>
+          <div class="case__num other-case__num">№5</div>
+          <div class="case__text other-case__text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</div>
+        </div>
+      </div><!--/other-case-->
+    </section>
+
+    <section class="find-hotel">
+      <h1 class="find-hotel__header">Заинтересовались?</h1>
+      <div class="find-hotel__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</div>
+      <a href="" target="_blank" rev="noopener" class="button">Найти гостиницу</a>
+    </section><!--/find-hotel-->
+
+    <section class="map">
+
+      <div id="map" style="width: 100%; height: 350px;"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: 34.868182, lng: -111.772822};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 9,
+            center: uluru,
+            disableDefaultUI: true,
+            zoomControl: false,
+            scaleControl: false
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+
+      <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOBQZ5lE_rg7jpQljr0bRuHPkFzBynq6Q&callback=initMap">
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <div class="hashtag">#visitSEDONA</div>
+    <section class="soc">
+      <div class="soc__item soc__twit"></div>
+      <div class="soc__item soc__fb"></div>
+      <div class="soc__item soc__yout"></div>
+    </section>
+    <div class="developed"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rev="noopener">Разработано <img src="http://placehold.it/27x34"></a></div>
+  </footer>
   </body>
 </html>
