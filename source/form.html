@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-s
+cale=1">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+  <header>
+    <section class="menu">
+      <div class="menu__burger js-burger">
+        <span class="burger__box">
+          <span class="burger__inner"></span>
+        </span>
+      </div>
+      <div class="menu__container">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="index.html">Главная</a></li>
+          <li class="menu__item"><a href="photo.html">Фото и&nbsp;видео</a></li>
+          <li class="menu__item">Форма отзыва</li>
+          <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
+        </ul>
+      </div>
+      <div class="logo"><img src="http://placehold.it/102x83"></div>
+    </section><!--/menu-->
+    <section class="first-screen">
+      <div class="first-screen__welcome first-screen__welcome--inner"><img src="http://placehold.it/229x39"></div>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1 class="intro__title">Оставьте свой отзыв</h1>
+      <div class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</div>
+    </section>
+
+    <section class="feedback">
+      <form class="feedback__form" action="">
+        <fieldset class="feedback__fieldset feedback-introduce">
+          <legend class="feedback__title">Представьтесь:</legend>
+          <div class="feedback__item feedback-introduce__item">
+            <label class="feedback__label" for="firstname">Имя*:</label><input class="feedback__field" type="text" id="firstname" placeholder="Петр" required>
+          </div>
+          <div class="feedback__item feedback-introduce__item">
+            <label class="feedback__label" for="lastname">Фамилия*:</label><input class="feedback__field" type="text" id="lastname" placeholder="Иванов" required>
+          </div>
+          <div class="feedback__item feedback-introduce__item">
+            <label class="feedback__label" for="secondname">Отчество:</label><input class="feedback__field" type="text" id="secondname" placeholder="Александрович">
+          </div>
+        </fieldset><!--/feedback__introduce-->
+
+        <fieldset class="feedback__fieldset feedback-contacts">
+          <legend class="feedback__title">Контактная информация:</legend>
+          <div class="feedback__item feedback-contacts__item">
+            <label class="feedback__label" for="phone">Контактный телефон*:</label><input type="tel" class="feedback__field feedback__phone"  id="phone" placeholder="Введите телефон" required>
+          </div>
+          <div class="feedback__item feedback-contacts__item">
+            <label class="feedback__label" for="email">Электронная почта*:</label><input type="text" class="feedback__field feedback__email" id="email" placeholder="Введите e-mail" required>
+          </div>
+        </fieldset><!--/feedback__contacts-->
+
+        <fieldset class="feedback__fieldset feedback-feeling">
+          <legend class="feedback__title">Ваше общее впечатление:</legend>
+          <div class="feedback__item feedback-feeling__item">
+            <input type="radio" class="feedback__radio" name="feeling" value="positive"  id="positive" checked><label class="feedback__label" for="positive">Скорее положительное</label>
+          </div>
+          <div class="feedback__item feedback-feeling__item">
+            <input type="radio" class="feedback__radio" name="feeling" value="negative" id="negative"><label class="feedback__label" for="negative">Скорее отрицательное</label>
+          </div>
+          <div class="feedback__item feedback-feeling__item">
+            <input type="radio" class="feedback__radio" name="feeling" value="neutral" id="neutral"><label class="feedback__label" for="neutral">Затрудняюсь ответить</label>
+          </div>
+        </fieldset><!--/feedback__feeling-->
+
+        <fieldset class="feedback__fieldset feedback-attraction">
+          <legend class="feedback__title">Посещенные
+            достопримечательности:</legend>
+          <div class="feedback__item feedback-attraction__item">
+            <input type="checkbox" class="feedback__checkbox" name="attraction" value="bridge"  id="bridge" checked><label class="feedback__label" for="bridge">Мост Дьявола</label>
+          </div>
+          <div class="feedback__item feedback-attraction__item">
+            <input type="checkbox" class="feedback__checkbox" name="attraction" value="bell"  id="bell" checked><label class="feedback__label" for="bell">Гора-Колокол</label>
+          </div>
+          <div class="feedback__item feedback-attraction__item">
+            <input type="checkbox" class="feedback__checkbox" name="attraction" value="slidepark" id="slidepark" checked><label class="feedback__label" for="slidepark">Слайд-парк</label>
+          </div>
+          <div class="feedback__item feedback-attraction__item">
+            <input type="checkbox" class="feedback__checkbox" name="attraction" value="redrocks" id="redrocks"><label class="feedback__label" for="redrocks">Красные скалы</label>
+          </div>
+        </fieldset><!--/feedback__attractions-->
+
+        <fieldset class="feedback__emotions">
+          <legend class="feedback__title">Опишите свои эмоции:</legend>
+          <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset><!--/feedback__emotions-->
+
+        <button type="submit" class="button">Отправить отзыв</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="hashtag">#visitSEDONA</div>
+    <section class="soc">
+      <div class="soc__item soc__twit"></div>
+      <div class="soc__item soc__fb"></div>
+      <div class="soc__item soc__yout"></div>
+    </section>
+    <div class="developed"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rev="noopener">Разработано <img src="http://placehold.it/27x34"></a></div>
+  </footer>
+  </body>
+</html>
