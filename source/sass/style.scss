@@ -1,4 +1,10 @@
 @import "normalize";
+@font-face{
+  font-family: 'PTSans';
+  url('../fonts/ptsans.woff') format('woff'),
+  font-weight: normal;
+  font-style: normal;
+}
 @import "blocks/menu";
 @import "blocks/first-screen";
 @import "blocks/intro";
