@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-s
 cale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   <header>
     <section class="menu">
-      <div class="menu__burger js-burger">
+      <button type="button" class="menu__burger js-burger">
         <span class="burger__box">
           <span class="burger__inner"></span>
         </span>
-      </div>
+      </button>
       <div class="menu__container">
         <ul class="menu__list">
           <li class="menu__item">Главная</li>
@@ -24,12 +25,12 @@ cale=1">
           <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </div>
-      <div class="logo"><img src="http://placehold.it/102x83"></div>
     </section><!--/menu-->
-    <section class="first-screen">
-      <div class="first-screen__welcome"><img src="http://placehold.it/282x214"></div>
-    </section>
+    <div class="logo"><img src="http://placehold.it/102x83"></div>
   </header>
+  <section class="first-screen">
+    <div class="first-screen__welcome"><img src="http://placehold.it/282x214"></div>
+  </section>
 
   <main>
     <section class="intro">
@@ -39,14 +40,14 @@ cale=1">
       <div class="intro__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</div>
     </section>
     <section class="cases">
-      <div class="case case1">
-        <header class="case__header case1__header">
-          <h1 class="case__title case1__title">Настоящий городок</h1>
-          <div class="case__num case1__num">№1</div>
-          <div class="case__text case1__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</div>
+      <div class="case case--accent">
+        <header class="case__header">
+          <h1 class="case__title">Настоящий городок</h1>
+          <div class="case__num">№1</div>
+          <div class="case__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</div>
         </header>
-        <div class="case__image case1__image"></div>
-        <div class="case__list case1__list case-list">
+        <div class="case__image"></div>
+        <div class="case__list case-list">
           <div class="case-list__item">
             <div class="case-list__icon"><img src="http://placehold.it/39x37"></div>
             <div class="case-list__desc">
@@ -71,30 +72,30 @@ cale=1">
         </div>
       </div><!--/case1-->
 
-      <div class="case case2">
-        <header class="case__header case2__header">
-          <h1 class="case__title case2__title">Там есть Мост дьявола</h1>
-          <div class="case__num case2__num">№2</div>
-          <div class="case__text case2__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</div>
+      <div class="case case--accent">
+        <header class="case__header">
+          <h1 class="case__title">Там есть Мост дьявола</h1>
+          <div class="case__num">№2</div>
+          <div class="case__text">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</div>
         </header>
-        <div class="case__image case2__image"></div>
+        <div class="case__image"></div>
       </div><!--/case2-->
 
-      <div class="other-case case">
-        <div class="case__header other-case__header">
-          <h1 class="case__title other-case__title">Небольшая площадь</h1>
-          <div class="case__num other-case__num">№3</div>
-          <div class="case__text other-case__text">Все интересные места находятся очень близко</div>
+      <div class="case case--multiple">
+        <div class="case__header">
+          <h1 class="case__title">Небольшая площадь</h1>
+          <div class="case__num">№3</div>
+          <div class="case__text">Все интересные места находятся очень близко</div>
         </div>
-        <div class="case__header other-case__header">
-          <h1 class="case__title other-case__title">Красивая дорога</h1>
-          <div class="case__num other-case__num">№4</div>
-          <div class="case__text other-case__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</div>
+        <div class="case__header">
+          <h1 class="case__title">Красивая дорога</h1>
+          <div class="case__num">№4</div>
+          <div class="case__text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</div>
         </div>
-        <div class="case__header other-case__header">
-          <h1 class="case__title other-case__title">Мало туристов</h1>
-          <div class="case__num other-case__num">№5</div>
-          <div class="case__text other-case__text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</div>
+        <div class="case__header">
+          <h1 class="case__title">Мало туристов</h1>
+          <div class="case__num">№5</div>
+          <div class="case__text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</div>
         </div>
       </div><!--/other-case-->
     </section>
@@ -133,10 +134,10 @@ cale=1">
 
   <footer>
     <div class="hashtag">#visitSEDONA</div>
-    <section class="soc">
-      <div class="soc__item soc__twit"></div>
-      <div class="soc__item soc__fb"></div>
-      <div class="soc__item soc__yout"></div>
+    <section class="social">
+      <a href="" class="social__item social__item--twit"></a>
+      <a href="" class="social__item social__item--fb"></a>
+      <a href="" class="social__item social__item--yout"></a>
     </section>
     <div class="developed"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rev="noopener">Разработано <img src="http://placehold.it/27x34"></a></div>
   </footer>
